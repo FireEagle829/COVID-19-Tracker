@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 .0">
+    <title>CoronaVirus Update</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <script src="./Assets/js/app.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        CoronaVirus - Update Report
+    </header>
+
+    <!-- Information Section -->
+    <section class="container">
+
+        <!-- Infection Div -->
+        <div class="container_info container--infection">
+            <h3>Total Cases</h3>
+            <span id="value-infected"></span>
+        </div>
+
+        <!-- Death Div -->
+        <div class="container_info container--death">
+            <h3>Total Deaths</h3>
+            <span id="value-death"></span>
+
+        </div>
+
+        <!-- Recovery Div -->
+        <div class="container_info container--recovery">
+            <h3>Total Recoveries</h3>
+            <span id="value-recovery"></span>
+
+        </div>
+
+    </section>
+    <br>
+
+    <!-- Update Table Section -->
+    <section class="update">
+        <h1 class="alert"></h1>
+        <!-- Search Section -->
+        <fieldset>
+            <legend>Search for a country</legend>
+            <div class="search">
+                <form action="#">
+                    <input type="text" id="country" placeholder="Country Name">
+                </form>
+            </div>
+        </fieldset>
+
+        <!-- Main Table Section -->
+        <div class="mainTable">
+            <table border="1">
+                <tr>
+                    <th class="header-country">Country</th>
+                    <th class="header-totalCases">Total Cases</th>
+                    <th class="header-newCases">New Cases</th>
+                    <th class="header-totalDeaths">Total Deaths</th>
+                    <th class="header-newDeaths">New Deaths</th>
+                    <th class="header-totalRecovered">Total Recovered</th>
+                    <th class="header-newRecovered">New Recovered</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div class="copyright">Copyrighted By Mohamed Emad & Ali Gamal</div>
+</body>
+
+</html>
